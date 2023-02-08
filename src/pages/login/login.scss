@@ -1,0 +1,80 @@
+.login{
+    height:100vh; //100% of the viewport height
+    background-color: rgb(173, 173, 245) ;
+    display: flex;
+    align-items: center; //along the main axis
+    justify-content: center; //along the cross axis
+    .card{
+        width: 50%; //width of the content are
+        background-color: rgb(252, 252, 251);
+        display: flex;
+        border-radius: 10px; //radius of the outer border edges
+        min-height: 320px;
+        overflow: hidden;
+
+
+        .left{
+            padding: 30px;
+            flex: 1;
+            background:linear-gradient(rgb(173, 173, 245) ,rgba(255, 255, 255, 0.022)), url("https://images.pexels.com/photos/3760790/pexels-photo-3760790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center;
+            background-size: cover;
+            
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+            
+            h1{
+                font-size: 100px;
+                line-height: 100px;
+            }
+
+            p{  
+                font-size: 25px;
+            }
+
+            span{
+                font-size: 20px;
+            }
+            
+            button{
+                width: 50%;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                color: rebeccapurple;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+        .right{
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+            h1{
+                color: #555;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                input{
+                    border: none;
+                    padding: 20px 10;
+                    border-bottom: 1px solid lightgray;
+                }
+
+                button{
+                    background-color: rebeccapurple;
+                    padding: 10px;
+                    color: white;
+                    font-weight: bold;
+                    // width: 50%;
+                }
+            }
+        }
+    }
+}
