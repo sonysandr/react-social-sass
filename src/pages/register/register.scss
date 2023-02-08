@@ -1,0 +1,81 @@
+.register{
+    background-color: rgb(173, 173, 245) ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+ .card{
+        background-color: #fff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 50%;
+        min-height: 600px;
+        overflow: hidden;
+        border-radius: 10px;
+        
+        .left{
+            flex: 1;
+            background:linear-gradient(rgb(173, 173, 245) ,rgba(255, 255, 255, 0.022)), url('https://images.pexels.com/photos/3760790/pexels-photo-3760790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center;
+            color: #fff;
+            background-size: cover;
+            padding: 50px; 
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1{
+              font-size: 100px;
+              line-height: 100px;  
+            }
+
+            p{
+                font-size: 23px;
+            }
+
+            span{
+                font-size: 20x;
+            }
+            button{
+                border: none;
+                width: 50%;
+                color: rebeccapurple;
+                font-weight: bold;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            padding: 50px;
+
+            h1{
+                color: #555;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+                }
+                button{
+                    width: 50%;
+                    padding: 10px;
+                    color: white;
+                    font-weight: bold;
+                    background-color: rebeccapurple;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+}

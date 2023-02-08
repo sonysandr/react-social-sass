@@ -2,8 +2,8 @@
     height:100vh; //100% of the viewport height
     background-color: rgb(173, 173, 245) ;
     display: flex;
-    align-items: center; //along the main axis
-    justify-content: center; //along the cross axis
+    align-items: center; //along the cross axis
+    justify-content: center; //along the main axis
     .card{
         width: 50%; //width of the content are
         background-color: rgb(252, 252, 251);
