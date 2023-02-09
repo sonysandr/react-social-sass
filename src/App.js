@@ -12,7 +12,8 @@ import ProtectedRoutes from "./pages/protectedroutes/ProtectedRoutes";
 
 function App() {
 
-const currentUser = false;
+  // temp user auth
+const currentUser = true;
 
   const Layout = () => {
     return (
