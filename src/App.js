@@ -11,18 +11,19 @@ import Home from "./pages/home/Home";
 import ProtectedRoutes from "./pages/protectedroutes/ProtectedRoutes";
 
 function App() {
-
   // temp user auth
-const currentUser = true;
+  const currentUser = true;
 
   const Layout = () => {
     return (
       <div>
         <Navbar />
-        <div sx={{ display: "flex" }}>
-          <Leftbar />
-          <Outlet />
-          <Rightbar />
+        <div style={{ display: "flex" }}>
+            <Leftbar />
+            <div style={{flex: 6 }}>
+              <Outlet  />
+            </div>
+            <Rightbar />
         </div>
       </div>
     );
@@ -31,13 +32,13 @@ const currentUser = true;
   return (
     <BrowserRouter>
       <Routes>
-      <Route element={<ProtectedRoutes ifUser={currentUser}/>}>
-          <Route path="/" element={<Layout/>}>
-                <Route path="/" element={<Home />} />
-                <Route path="/profile/:id" element={<Profile />} />
-            </Route>
-      </Route>
-        
+        <Route element={<ProtectedRoutes ifUser={currentUser} />}>
+            <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile/:id" element={<Profile />} />
+          </Route>
+        </Route>
+
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>

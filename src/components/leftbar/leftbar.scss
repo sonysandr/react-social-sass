@@ -1,0 +1,58 @@
+.leftBar{
+    flex: 1;
+    background-color: red;
+    .container{
+       
+        hr{
+            margin: 20px 0px ;
+            border: none;
+            height: 0.5px;
+            background-color: rgb(197, 190, 190);
+            
+           
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            span{
+                    font-size: 14px;
+                }
+
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+                    
+
+                }
+                span{
+                    font-size: 16px;
+                }
+
+            }
+
+            .item{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img{ 
+                    width: 30px;
+                    
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
