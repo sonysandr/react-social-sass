@@ -1,6 +1,15 @@
 .leftBar{
     flex: 1;
-    background-color: red;
+   
+    position: sticky;
+    top: 71.52px;
+    height: calc(100vh - 71.52px);
+    overflow: scroll;
+
+    // We dont want to display scroll bar
+    &::-webkit-scrollbar{
+        display: none;
+    }
     .container{
        
         hr{

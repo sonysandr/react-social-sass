@@ -49,7 +49,7 @@ const Leftbar = () => {
           </div>
         </div>
 
-        {/* <hr /> */}
+        <hr />
 
         <div className="menu">
           <span>Your ShortCuts</span>
@@ -76,7 +76,7 @@ const Leftbar = () => {
           </div>
         </div>
 
-        {/* <hr /> */}
+        <hr />
 
         <div className="menu">
           <span>Others</span>
