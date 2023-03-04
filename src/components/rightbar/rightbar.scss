@@ -1,4 +1,11 @@
+@import '../../style.scss';
+
+
+    
+    
+
 .rightBar{
+    @include themify($themes) {
    
     flex: 5;
     
@@ -6,6 +13,7 @@
     top: 71.52px;
     height: calc(100vh - 71.52px);
     overflow: scroll;
+    background-color: themed('bgSoft');
 
     // We dont want to display scroll bar
     &::-webkit-scrollbar{
@@ -14,7 +22,7 @@
     .container{
         
         
-        background-color:white;
+        background-color:themed('bgSoft');
 
         .item{
             -webkit-box-shadow: -3px 4px 9px 0px rgba(0,0,0,0.75);
@@ -22,6 +30,7 @@
             box-shadow: -3px 4px 9px 0px rgba(0,0,0,0.75);
             padding: 20px;
             margin-bottom: 20px;
+            background-color: themed('bgSoft');
             
           
             span{
@@ -32,7 +41,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 10px;
+                padding: 20px;
+                background-color: themed('bg');
                 
                 .userInfo{
                 display: flex;
@@ -56,12 +66,12 @@
                     }
 
                     p{
-                        color: gray;
+                        color: themed('textColorSoft');
                     }
 
                     span{
                         font-weight: 500;
-                        color: black;
+                        color:themed('textColor');
                     }
                 }
                 .buttons{
@@ -88,4 +98,5 @@
     }
 
 
+}
 }
